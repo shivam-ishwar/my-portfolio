@@ -152,18 +152,28 @@ h1{ margin: 10px 0 10px; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; }
 }
 
 .skillGrid{
-  margin-top: 18px;
+  margin-top: 22px;
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
 }
-.chips{ display:flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.chips{ display:flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
 .chip{
-  padding: 8px 10px;
+  padding: 10px 12px;
   border-radius: 12px;
   background: rgba(255,255,255,0.05);
   border: 1px solid rgba(150,170,255,0.12);
   font-size: 13px;
+  line-height: 1.25;
+}
+
+#skills .card{
+  padding: 20px;
+}
+
+#skills .card h3{
+  margin: 0;
+  font-size: 18px;
 }
 
 .contactGrid{
@@ -174,6 +184,39 @@ h1{ margin: 10px 0 10px; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; }
 }
 .card--link:hover{ border-color: rgba(94,242,214,0.30); transform: translateY(-1px); }
 .contactVal{ font-size: 16px; margin-top: 6px; }
+
+.contactForm{
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+}
+.contactForm__label{
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.contactForm__message{
+  width: 100%;
+  resize: vertical;
+  min-height: 130px;
+  border-radius: 14px;
+  border: 1px solid rgba(150,170,255,0.20);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  padding: 12px 14px;
+  font: inherit;
+  line-height: 1.45;
+}
+.contactForm__message:focus{
+  outline: none;
+  border-color: rgba(94,242,214,0.45);
+  box-shadow: 0 0 0 3px rgba(94,242,214,0.10);
+}
+.contactForm__submit{
+  width: fit-content;
+}
 
 .footer{
   margin-top: 20px;
@@ -195,7 +238,7 @@ h1{ margin: 10px 0 10px; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; }
   .wrap{ width: min(1120px, calc(100% - 28px)); }
   .hero{ grid-template-columns: 1fr; gap: 18px; }
   .grid{ grid-template-columns: repeat(2, 1fr); }
-  .skillGrid{ grid-template-columns: repeat(2, 1fr); }
+  .skillGrid{ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
   .contactGrid{ grid-template-columns: repeat(2, 1fr); }
   .holoCard{ transform: none; }
 }
@@ -244,6 +287,13 @@ h1{ margin: 10px 0 10px; font-size: clamp(34px, 4vw, 52px); line-height: 1.05; }
   .hero{ padding: 34px 0 16px; }
   .section__head h2{ font-size: 22px; }
   .card{ padding: 14px; }
+  #skills .card{ padding: 16px; }
+  .contactForm{
+    padding: 16px;
+  }
+  .contactForm__submit{
+    width: 100%;
+  }
   .contactVal{
     font-size: 14px;
     overflow-wrap: anywhere;

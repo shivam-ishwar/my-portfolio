@@ -21,4 +21,15 @@ export class AppComponent {
 
   trackByCompany = (_: number, x: any) => x?.company ?? _;
   trackByGroup = (_: number, x: any) => x?.group ?? _;
+
+  openMailDraft(message: string, email: string): void {
+    const cleanMessage = message.trim();
+    if (!cleanMessage || !email || typeof window === 'undefined') return;
+
+    const subject = encodeURIComponent('Portfolio Inquiry');
+    const body = encodeURIComponent(
+      `Hello Shivam,\n\n${cleanMessage}\n\nThanks.`
+    );
+    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+  }
 }

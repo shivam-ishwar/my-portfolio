@@ -36,13 +36,17 @@
     ],
     "terminalLines": [
       "shivam@portfolio:~$ whoami",
-      "Software Engineer - .NET and Angular",
-      "shivam@portfolio:~$ skills --top",
+      "Shivam Kumar // full-stack systems engineer translating product pressure into reliable software.",
+      "shivam@portfolio:~$ cat mindset.txt",
+      "I design APIs that stay calm under load, frontends that feel sharp without noise, and codebases that survive handovers.",
+      "I prefer architecture that explains itself, logs that tell the truth, and releases that do not surprise anyone at 2AM.",
+      "shivam@portfolio:~$ stack --inspect",
       "Angular • TypeScript • .NET Core • Microservices • SQL Server",
-      "shivam@portfolio:~$ experience --latest",
-      "Streamsequence Technologies (Mar 2025 - Present)",
-      "Transvision Solutions (Sep 2023 - Nov 2024)",
-      "Xelpmoc Design and Tech Ltd (Aug 2023 - Sep 2023)"
+      "shivam@portfolio:~$ build --principles",
+      "Secure by default. Fast by design. Maintainable on purpose.",
+      "Every feature ships with intent: clear contracts, measurable outcomes, and room for the next engineer to move faster.",
+      "shivam@portfolio:~$ collaboration --status",
+      "Available for full-time and freelance roles where product quality and engineering discipline both matter."
     ]
   },
   "experience": [],
