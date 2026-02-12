@@ -1,0 +1,38 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Angular
+dist/
+.angular/
+.cache/
+.sass-cache/
+coverage/
+
+# Environment files
+src/environments/*.local.ts
+
+# IDE
+.vscode/
+.idea/
+
+# Mac
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# SSR
+server/main.js
+server/main.js.map
+
+# Optional
+.env

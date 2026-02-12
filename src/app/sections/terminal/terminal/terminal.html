@@ -1,0 +1,15 @@
+<section class="terminal" id="terminal" reveal>
+  <div class="terminal__chrome">
+    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    <span class="title">shivam@portfolio — zsh</span>
+  </div>
+
+  <div class="terminal__body" aria-label="Terminal showcase">
+    <div class="line" *ngFor="let l of rendered(); trackBy: trackByIdx">
+      <span class="prompt" *ngIf="l.includes('$')">▸</span>
+      <span class="text">{{ l }}</span>
+    </div>
+
+    <div class="cursor" aria-hidden="true"></div>
+  </div>
+</section>

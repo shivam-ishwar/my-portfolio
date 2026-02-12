@@ -1,0 +1,157 @@
+<ng-container *ngIf="vm$ | async as vm">
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <div class="brand">
+        <span class="brand__mark">⌁</span>
+        <span class="brand__text">{{ vm.meta.name }}</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a class="nav__cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="top" reveal>
+      <div class="hero__left">
+        <p class="kicker">{{ vm.meta.title }}</p>
+        <h1>{{ vm.hero.headline }}</h1>
+        <p class="sub">{{ vm.hero.subheadline }}</p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" *ngFor="let c of vm.hero.cta" [href]="c.href">{{ c.label }}</a>
+        </div>
+
+        <div class="meta">
+          <span>{{ vm.meta.email }}</span>
+          <span>•</span>
+          <span>{{ vm.meta.phone }}</span>
+          <span>•</span>
+          <span>LinkedIn: {{ vm.meta.linkedin }}</span>
+        </div>
+      </div>
+
+      <div class="hero__right">
+        <div class="holoCard">
+          <div class="holoCard__title">Focus</div>
+          <div class="holoCard__body">
+            <div class="pill" *ngFor="let h of vm.about.highlights">{{ h }}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TERMINAL -->
+    <app-terminal [lines]="vm.skills.terminalLines"></app-terminal>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" reveal>
+      <div class="section__head">
+        <h2>Experience</h2>
+        <p>Recent roles and key impact.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card card--3d" *ngFor="let e of vm.experience; trackBy: trackByCompany" reveal>
+          <div class="card__top">
+            <div>
+              <h3>{{ e.role }}</h3>
+              <div class="muted">{{ e.company }}</div>
+            </div>
+            <div class="time">{{ e.start }} — {{ e.end }}</div>
+          </div>
+
+          <ul class="bullets">
+            <li *ngFor="let b of e.bullets">{{ b }}</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag" *ngFor="let t of e.tags">{{ t }}</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" reveal>
+      <div class="section__head">
+        <h2>Skills</h2>
+        <p>Tools and strengths I use to ship reliable systems.</p>
+      </div>
+
+      <div class="skillGrid">
+        <div class="card" *ngFor="let g of vm.skills.primary; trackBy: trackByGroup" reveal>
+          <h3>{{ g.group }}</h3>
+          <div class="chips">
+            <span class="chip" *ngFor="let s of g.items">{{ s }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" reveal>
+      <div class="section__head">
+        <h2>Projects</h2>
+        <p>Selected work showcasing architecture, UX, and problem-solving.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card card--3d" *ngFor="let p of vm.projects; trackBy: trackByName" reveal>
+          <div class="card__top">
+            <h3>{{ p.name }}</h3>
+            <div class="stack">
+              <span class="tag" *ngFor="let s of p.stack">{{ s }}</span>
+            </div>
+          </div>
+          <p class="muted">{{ p.summary }}</p>
+          <ul class="bullets">
+            <li *ngFor="let b of p.bullets">{{ b }}</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education" reveal>
+      <div class="section__head">
+        <h2>Education</h2>
+      </div>
+
+      <div class="grid">
+        <article class="card" *ngFor="let ed of vm.education" reveal>
+          <h3>{{ ed.degree }}</h3>
+          <div class="muted">{{ ed.school }}</div>
+          <div class="time">{{ ed.start }} — {{ ed.end }}</div>
+          <div class="muted" *ngIf="ed.grade">Grade: {{ ed.grade }}</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" reveal>
+      <div class="section__head">
+        <h2>Contact</h2>
+        <p>{{ vm.contact.pitch }}</p>
+      </div>
+
+      <div class="contactGrid">
+        <a class="card card--link" *ngFor="let l of vm.contact.links" [href]="l.href" target="_blank" rel="noreferrer" reveal>
+          <div class="muted">{{ l.label }}</div>
+          <div class="contactVal">{{ l.value }}</div>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <span>© {{ vm.meta.name }}</span>
+        <a href="#top">Back to top</a>
+      </footer>
+    </section>
+  </main>
+</ng-container>

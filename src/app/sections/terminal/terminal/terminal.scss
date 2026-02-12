@@ -1,0 +1,44 @@
+.terminal {
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(8, 10, 18, 0.82);
+  border: 1px solid rgba(140, 160, 255, 0.16);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+  transform: perspective(900px) rotateX(2deg);
+  will-change: transform;
+}
+
+.terminal__chrome {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(140, 160, 255, 0.12);
+
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .red { background: #ff5f56; }
+  .yellow { background: #ffbd2e; }
+  .green { background: #27c93f; }
+  .title { margin-left: 8px; font-size: 12px; opacity: 0.75; }
+}
+
+.terminal__body {
+  padding: 16px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+
+  .line { display: flex; gap: 10px; }
+  .prompt { opacity: 0.6; }
+  .text { white-space: pre-wrap; }
+  .cursor {
+    width: 10px; height: 18px;
+    background: rgba(180, 210, 255, 0.8);
+    display: inline-block;
+    margin-top: 6px;
+    animation: blink 1s steps(2) infinite;
+  }
+}
+
+@keyframes blink { 50% { opacity: 0; } }
