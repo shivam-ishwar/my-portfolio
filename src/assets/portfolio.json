@@ -8,8 +8,8 @@
     "linkedin": "shivamkumar-it"
   },
   "hero": {
-    "headline": "Engineering reliable products for web and enterprise platforms",
-    "subheadline": "Software Engineer specializing in .NET services, Angular applications, and performance-driven delivery.",
+    "headline": "Building dependable digital products with strong engineering fundamentals",
+    "subheadline": "Software Engineer focused on scalable systems, clean execution, and measurable product impact.",
     "cta": [
       { "label": "Contact", "href": "#contact" },
       { "label": "Resume", "href": "#resume" }
@@ -17,14 +17,14 @@
   },
   "about": {
     "summary": [
-      "Software Engineer experienced in delivering secure backend services and maintainable frontend applications for enterprise use cases.",
-      "Focused on clean architecture, measurable performance improvements, and dependable product delivery."
+      "I build production software that balances speed, reliability, and long-term maintainability across backend and frontend systems.",
+      "My approach is straightforward: clear architecture, secure defaults, and delivery quality that teams can trust release after release."
     ],
     "highlights": [
-      ".NET microservices and REST API design",
-      "Application security with JWT, RBAC, and claims-based authorization",
-      "Scalable Angular architecture with reusable UI systems",
-      "Performance optimization through async workflows, lazy loading, and validation"
+      "Designing service architectures and APIs that stay stable as product complexity grows",
+      "Implementing practical security patterns with robust authentication and authorization",
+      "Building modular frontend systems that remain clean and maintainable at scale",
+      "Driving performance through profiling, targeted optimization, and disciplined validation"
     ]
   },
   "skills": {
@@ -36,28 +36,28 @@
     ],
     "terminalLines": [
       "shivam@portfolio:~$ whoami",
-      "Shivam Kumar // full-stack systems engineer translating product pressure into reliable software.",
+      "Shivam Kumar // software engineer turning product ambiguity into clear, working systems.",
       "shivam@portfolio:~$ cat mindset.txt",
-      "I design APIs that stay calm under load, frontends that feel sharp without noise, and codebases that survive handovers.",
-      "I prefer architecture that explains itself, logs that tell the truth, and releases that do not surprise anyone at 2AM.",
+      "I build APIs that remain predictable under pressure, frontends that stay intuitive, and codebases that teams can confidently extend.",
+      "I value architecture with intent, diagnostics that reveal facts quickly, and releases that are boring for the right reasons.",
       "shivam@portfolio:~$ stack --inspect",
       "Angular • TypeScript • .NET Core • Microservices • SQL Server",
       "shivam@portfolio:~$ build --principles",
-      "Secure by default. Fast by design. Maintainable on purpose.",
-      "Every feature ships with intent: clear contracts, measurable outcomes, and room for the next engineer to move faster.",
+      "Secure by default. Performance-aware by design. Maintainable by discipline.",
+      "Every feature is delivered with clear contracts, measurable outcomes, and implementation quality that compounds over time.",
       "shivam@portfolio:~$ collaboration --status",
-      "Available for full-time and freelance roles where product quality and engineering discipline both matter."
+      "Open to full-time and freelance work with teams that care about product quality, ownership, and engineering rigor."
     ]
   },
   "experience": [],
   "resume": {
     "title": "Resume",
-    "description": "View my latest resume for role history, technical strengths, and project delivery details.",
+    "description": "Explore my latest resume for project outcomes, technical depth, and delivery experience across real-world products.",
     "label": "Open Resume",
     "href": "https://drive.google.com/file/d/1XhI4TehzkM6WAyocDtHnKyTrP3s-JEYn/view?usp=drive_link"
   },
   "contact": {
-    "pitch": "Available for full-time and freelance full-stack opportunities. For project discussions, email is preferred and I am also reachable by phone or LinkedIn.",
+    "pitch": "I am available for full-time and freelance opportunities. If you are building something meaningful, share the context and I will respond with clarity and next steps.",
     "links": [
       { "label": "Email", "value": "shivam.kumar77087@gmail.com", "href": "mailto:shivam.kumar77087@gmail.com" },
       { "label": "Phone", "value": "+91 8102389686", "href": "tel:+918102389686" },
