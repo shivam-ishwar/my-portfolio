@@ -31,7 +31,13 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --configuration production --base-href /
+        run: |
+          if [ "${{ github.event.repository.name }}" = "${{ github.repository_owner }}.github.io" ]; then
+            BASE_HREF="/"
+          else
+            BASE_HREF="/${{ github.event.repository.name }}/"
+          fi
+          npm run build -- --configuration production --base-href "$BASE_HREF"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
