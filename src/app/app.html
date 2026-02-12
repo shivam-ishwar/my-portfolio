@@ -9,8 +9,7 @@
       <nav class="nav">
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
+        <a href="#resume">Resume</a>
         <a class="nav__cta" href="#contact">Contact</a>
       </nav>
     </div>
@@ -95,42 +94,18 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects" reveal>
+    <!-- RESUME -->
+    <section class="section" id="resume" reveal>
       <div class="section__head">
-        <h2>Projects</h2>
-        <p>Selected work showcasing architecture, UX, and problem-solving.</p>
+        <h2>{{ vm.resume.title }}</h2>
+        <p>{{ vm.resume.description }}</p>
       </div>
 
       <div class="grid">
-        <article class="card card--3d" *ngFor="let p of vm.projects; trackBy: trackByName" reveal>
-          <div class="card__top">
-            <h3>{{ p.name }}</h3>
-            <div class="stack">
-              <span class="tag" *ngFor="let s of p.stack">{{ s }}</span>
-            </div>
-          </div>
-          <p class="muted">{{ p.summary }}</p>
-          <ul class="bullets">
-            <li *ngFor="let b of p.bullets">{{ b }}</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="section" id="education" reveal>
-      <div class="section__head">
-        <h2>Education</h2>
-      </div>
-
-      <div class="grid">
-        <article class="card" *ngFor="let ed of vm.education" reveal>
-          <h3>{{ ed.degree }}</h3>
-          <div class="muted">{{ ed.school }}</div>
-          <div class="time">{{ ed.start }} — {{ ed.end }}</div>
-          <div class="muted" *ngIf="ed.grade">Grade: {{ ed.grade }}</div>
-        </article>
+        <a class="card card--link" [href]="vm.resume.href" target="_blank" rel="noreferrer" reveal>
+          <div class="muted">Google Drive</div>
+          <div class="contactVal">{{ vm.resume.label }}</div>
+        </a>
       </div>
     </section>
 

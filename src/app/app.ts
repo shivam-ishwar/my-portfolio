@@ -20,6 +20,5 @@ export class AppComponent {
   }
 
   trackByCompany = (_: number, x: any) => x?.company ?? _;
-  trackByName = (_: number, x: any) => x?.name ?? _;
   trackByGroup = (_: number, x: any) => x?.group ?? _;
 }

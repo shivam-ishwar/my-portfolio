@@ -8,23 +8,23 @@
     "linkedin": "shivamkumar-it"
   },
   "hero": {
-    "headline": "Building scalable systems & polished web experiences",
-    "subheadline": "Full-stack engineer focused on .NET microservices, Angular architecture, and performance-first UI.",
+    "headline": "Engineering reliable products for web and enterprise platforms",
+    "subheadline": "Software Engineer specializing in .NET services, Angular applications, and performance-driven delivery.",
     "cta": [
       { "label": "Contact", "href": "#contact" },
-      { "label": "Projects", "href": "#projects" }
+      { "label": "Resume", "href": "#resume" }
     ]
   },
   "about": {
     "summary": [
-      "Software Engineer with experience building secure, scalable REST APIs and modular Angular applications.",
-      "Strong focus on performance, maintainability, and clean architecture in enterprise environments."
+      "Software Engineer experienced in delivering secure backend services and maintainable frontend applications for enterprise use cases.",
+      "Focused on clean architecture, measurable performance improvements, and dependable product delivery."
     ],
     "highlights": [
-      "Microservices + REST APIs (.NET Core)",
-      "AuthN/AuthZ: JWT, RBAC, claims-based policies",
-      "Angular modular architecture and reusable components",
-      "Performance optimization (async, logging, validation, lazy loading)"
+      ".NET microservices and REST API design",
+      "Application security with JWT, RBAC, and claims-based authorization",
+      "Scalable Angular architecture with reusable UI systems",
+      "Performance optimization through async workflows, lazy loading, and validation"
     ]
   },
   "skills": {
@@ -36,7 +36,7 @@
     ],
     "terminalLines": [
       "shivam@portfolio:~$ whoami",
-      "Software Engineer — .NET Core + Angular",
+      "Software Engineer - .NET and Angular",
       "shivam@portfolio:~$ skills --top",
       "Angular • TypeScript • .NET Core • Microservices • SQL Server",
       "shivam@portfolio:~$ experience --latest",
@@ -45,83 +45,20 @@
       "Xelpmoc Design and Tech Ltd (Aug 2023 - Sep 2023)"
     ]
   },
-  "experience": [
-    {
-      "company": "Streamsequence Technologies",
-      "role": "Software Engineer",
-      "start": "Mar 2025",
-      "end": "Present",
-      "bullets": [
-        "Architected and supported multiple RESTful APIs in .NET Core within a microservices ecosystem.",
-        "Implemented JWT auth, RBAC, and claims-based policies for secure module access.",
-        "Improved API response time by ~30–40% via async programming, logging, validation, and structured error handling.",
-        "Built modular, reusable Angular components, reducing UI development effort by ~40%."
-      ],
-      "tags": ["Microservices", ".NET Core", "JWT", "RBAC", "Angular"]
-    },
-    {
-      "company": "Transvision Solutions",
-      "role": "Software Engineer",
-      "start": "Sep 2023",
-      "end": "Nov 2024",
-      "bullets": [
-        "Delivered full-stack enterprise features using Angular and ASP.NET Web API.",
-        "Designed backend APIs with business logic + validation + SQL Server operations.",
-        "Introduced modular Angular architecture (feature/shared modules/services) reducing redundancy by 30–35%.",
-        "Improved frontend load time by ~30% using lazy loading, RxJS patterns, and efficient change detection."
-      ],
-      "tags": ["Angular", "ASP.NET Web API", "SQL Server", "RxJS", "Performance"]
-    },
-    {
-      "company": "Xelpmoc Design and Tech Ltd",
-      "role": "Software Engineer",
-      "start": "Aug 2023",
-      "end": "Sep 2023",
-      "bullets": [
-        "Built responsive Angular UI components for enterprise applications.",
-        "Integrated frontend modules with REST APIs and validation handling.",
-        "Improved page load by ~30% through optimized rendering and asset management."
-      ],
-      "tags": ["Angular", "TypeScript", "REST", "Optimization"]
-    }
-  ],
-  "projects": [
-    {
-      "name": "E-Commerce Application",
-      "summary": "Dynamic product listing, cart management, and order processing with a component-based UI.",
-      "bullets": [
-        "Implemented client-side validation and API error handling to keep order states consistent.",
-        "Introduced TypeScript strict typing, reducing runtime frontend errors by ~30%.",
-        "Created reusable UI components and shared services, cutting feature development by ~20%."
-      ],
-      "stack": ["React", "TypeScript"]
-    },
-    {
-      "name": "Learning Management System (LMS) + Online Exam",
-      "summary": "Role-based dashboards with secure login and a timed exam module.",
-      "bullets": [
-        "Built APIs for exam scheduling, results processing, and course management.",
-        "Designed timed exam logic with server-side validation to prevent duration manipulation.",
-        "Created assignment and submission tracking to reduce manual overhead by ~20%."
-      ],
-      "stack": ["Angular", ".NET", "REST APIs"]
-    }
-  ],
-  "education": [
-    {
-      "school": "ITM Gwalior",
-      "degree": "Bachelor of Technology (IT)",
-      "grade": "CGPA 7.91",
-      "start": "Aug 2019",
-      "end": "Aug 2023"
-    }
-  ],
+  "experience": [],
+  "resume": {
+    "title": "Resume",
+    "description": "View my latest resume for role history, technical strengths, and project delivery details.",
+    "label": "Open Resume",
+    "href": "https://drive.google.com/file/d/1XhI4TehzkM6WAyocDtHnKyTrP3s-JEYn/view?usp=drive_link"
+  },
   "contact": {
-    "pitch": "Open to full-time roles and freelance work. Let’s build something clean, fast, and secure.",
+    "pitch": "Available for full-time and freelance full-stack opportunities. For project discussions, email is preferred and I am also reachable by phone or LinkedIn.",
     "links": [
       { "label": "Email", "value": "shivam.kumar77087@gmail.com", "href": "mailto:shivam.kumar77087@gmail.com" },
       { "label": "Phone", "value": "+91 8102389686", "href": "tel:+918102389686" },
-      { "label": "LinkedIn", "value": "shivamkumar-it", "href": "https://www.linkedin.com/in/shivamkumar-it" }
+      { "label": "LinkedIn", "value": "shivamkumar-it", "href": "https://www.linkedin.com/in/shivamkumar-it" },
+      { "label": "Project Email", "value": "Let's discuss your product", "href": "mailto:shivam.kumar77087@gmail.com?subject=Project%20Inquiry" }
     ]
   }
 }
